@@ -13,10 +13,9 @@ datasource db {
 model Product{
   id              Int       @id @default(autoincrement())
   name            String    
-  bar_code        String   @unique
-  price           Decimal
+  bar_code        String    @unique
+  price           Float     
   created_at      DateTime  @default(now()) 
-
 
   @@map("products")
 
